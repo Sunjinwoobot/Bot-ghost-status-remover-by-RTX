@@ -37,7 +37,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Watching /𝗘𝘃𝗮𝗱𝗲"];
+const statusMessages = ["Watching /𝐊𝐚𝐦𝐢𝐬𝐡"];
 
 
 let currentIndex = 0;
