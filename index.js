@@ -37,7 +37,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["where u go i go","i am the protector","ping me for fun","i am /grimmjow","Dami>>>","Veroz>>","curse>"];
+const statusMessages = ["ping me for fun","watching /grimmjow","Harukki>>>","Dami>>>","Veroz>>","curse>"];
 
 
 let currentIndex = 0;
