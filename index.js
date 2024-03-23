@@ -37,7 +37,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["ping me for fun","Invite your friends <3","Harukki>>>","Dami>>>","Veroz>>","curse>"];
+const statusMessages = ["my prefix - ;","ping me for fun","rep /shigaraki for pic","Harukki>>>","Dami>>>","Curse>>","Veroz>"];
 
 
 let currentIndex = 0;
