@@ -37,7 +37,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["my prefix - ;","ping me for fun","rep us for pic","Harukki>>>","Dami>>>","Curse>>","Veroz>"];
+const statusMessages = ["my prefix - ?","ping me for fun","rep us for pic","Harukki>>>","Dami>>>","Curse>>","Veroz>"];
 
 
 let currentIndex = 0;
