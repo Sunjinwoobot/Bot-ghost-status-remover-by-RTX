@@ -12,8 +12,17 @@
  *   Code by RTX GAMING
  * **********************************************
  */
-
-
+static void UpdatePresence()
+{
+    DiscordRichPresence discordPresence;
+    memset(&discordPresence, 0, sizeof(discordPresence));
+    discordPresence.state = "Playing /expire";
+    discordPresence.startTimestamp = 0;
+    discordPresence.largeImageText = "expire";
+    discordPresence.partyId = "ae488379-351d-4a4f-ad32-2b9b01c91657";
+    discordPresence.partySize = 1;
+    Discord_UpdatePresence(&discordPresence);
+}
 
 const { Client, GatewayIntentBits, ActivityType, TextChannel } = require('discord.js');
 require('dotenv').config();
