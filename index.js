@@ -12,17 +12,7 @@
  *   Code by RTX GAMING
  * **********************************************
  */
-static void UpdatePresence()
-{
-    DiscordRichPresence discordPresence;
-    memset(&discordPresence, 0, sizeof(discordPresence));
-    discordPresence.state = "Playing /expire";
-    discordPresence.startTimestamp = 0;
-    discordPresence.largeImageText = "expire";
-    discordPresence.partyId = "ae488379-351d-4a4f-ad32-2b9b01c91657";
-    discordPresence.partySize = 1;
-    Discord_UpdatePresence(&discordPresence);
-}
+
 
 const { Client, GatewayIntentBits, ActivityType, TextChannel } = require('discord.js');
 require('dotenv').config();
@@ -78,14 +68,17 @@ GIT : https://github.com/RTX-GAMINGG/Bot-ghost-status-remover-by-RTX
  */
 
 
-function updateStatusAndSendMessages() {
-  const currentStatus = statusMessages[currentIndex];
-  const nextStatus = statusMessages[(currentIndex + 1) % statusMessages.length];
-
-  client.user.setPresence({
-    activities: [{ name: currentStatus, type: ActivityType.Custom}],
-    status: 'dnd',
-  });
+static void UpdatePresence()
+{
+    DiscordRichPresence discordPresence;
+    memset(&discordPresence, 0, sizeof(discordPresence));
+    discordPresence.state = "Playing /expire";
+    discordPresence.startTimestamp = 0;
+    discordPresence.largeImageText = "expire";
+    discordPresence.partyId = "ae488379-351d-4a4f-ad32-2b9b01c91657";
+    discordPresence.partySize = 1;
+    Discord_UpdatePresence(&discordPresence);
+}
 
   
   const textChannel = client.channels.cache.get(channelId);
